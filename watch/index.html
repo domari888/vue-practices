@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <title>Computed</title>
+    <title>Watch</title>
   </head>
 
   <body>
-    <div id="calculation-properties">
-      <p>{{customer_list[1]}}さん、いらっしゃいませ！</p>
-      <p>商品名: {{item.name}}, 値段: {{item.price}}円</p>
-      <p>{{amount}}個で合計{{sumPrice}}円です！</p>
+    <div id="watch">
+      <p>卵: {{egg_status}}</p>
+      <p>算出プロパティ: {{checkEgg}}</p>
+      <p>ウォッチャ: {{message}}</p>
     </div>
     <script src="index.js"></script>
   </body>
