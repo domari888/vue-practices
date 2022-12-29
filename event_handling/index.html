@@ -12,6 +12,15 @@
       <button v-on:click="addCount">+1 ボタン</button>
       <p>カウンター : {{count}}</p>
     </div>
+    <div id="event-handling-input">
+      <input type="text" ref="name">
+      <button v-on:click="addMember">メンバー追加</button>
+      <ul>
+        <li v-for="member in team" v-bind:key="team.id">
+          名前 : {{member.name}}, 学籍番号 : {{member.id}}
+        </li>
+      </ul>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
