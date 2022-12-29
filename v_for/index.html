@@ -10,6 +10,7 @@
   <body>
     <div id="v-for">
       <ul>
+        <button v-on:click="addMember">メンバー追加</button>
         <li v-for="member in team" v-bind:key="team.id">
           名前 : {{member.name}}, 学籍番号 : {{member.id}}
         </li>
