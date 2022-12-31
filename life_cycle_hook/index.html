@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <title>Life Cycle Hook</title>
+  </head>
+
+  <body>
+    <div id="life-cycle-hook">
+      <button v-on:click="addCount">+1</button>
+      <p>カウンター : {{count}}</p>
+      <button v-on:click="callDelete">削除</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
